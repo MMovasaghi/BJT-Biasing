@@ -1,14 +1,12 @@
 
 # BJT-Biasing [DC]
 
-This program is calculating BJT Biasing.
+This program is calculating 7 BJT Biasing.
 
-
+* [Code Toturial](https://github.com/MMovasaghi/BJT-Biasing#Code-Toturial)
 * [Circuits](https://github.com/MMovasaghi/BJT-Biasing#circuits)
-* [Function Toturial](https://github.com/MMovasaghi/BJT-Biasing#Function-Toturial)
 
-
-## Function Toturial
+## Code Toturial
 
 Class **DC_Bio** is the main class that calculation is done there.
 
