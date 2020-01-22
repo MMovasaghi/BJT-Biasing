@@ -65,13 +65,61 @@ Class **DC_Bio** is the main class that calculation is done there.
 	- **Arguments** : `none` 
 		
 	- **Description** : 
-		- It is initial the value of all it's equal props.
+		- It is calculate the amount of the `V_CE`.
 		
 	- **Return Type** : `decimal` the result of `V_CE` value.
 
+* **Cal_Ic**
+	- **Arguments** : `none` 
+		
+	- **Description** : 
+		- It is calculate the amount of the `Ic` by `Ib`.
+		
+	- **Return Type** : `decimal` the result of `Ic` value.
 
+* **Cal_Ie**
+	- **Arguments** : `none` 
+		
+	- **Description** : 
+		- It is calculate the amount of the `Ie`.
+		
+	- **Return Type** : `decimal` the result of `Ie` value.
+	
+* **Cal_Ib**
+	- **Arguments** : `none` 
+		
+	- **Description** : 
+		- It is calculate the amount of the `Ib` that distinguished by `Circuit_Number`.
+		
+	- **Return Type** : `decimal` the result of `Ib` value.
 
+* **Cal_Vce**
+	- **Arguments** : `none` 
+		
+	- **Description** : 
+		- After calculating `Ic` and `Ib` that has been called in `CalCulate_VCE` method , the `CalCulate_VCE` method call the `Cal_Vce` to calculate the `V_CE`.
+		
+	- **Return Type** : `decimal` the result of `V_CE` value.
+	
+* **IsActive**
+	- **Arguments** : 
+		- decimal Vce
+		
+	- **Description** : 
+		- It is find the stated of the Transistor.
+		
+	- **Return Type** : `int` , it is return `2` if transistor is `Active` , return `1` if transistor is `Saturated` , return `0` if transistor is `disable`.
 
+* **IsActive_Message**
+	- **Arguments** : 
+		- decimal Vce
+		
+	- **Description** : 
+		- It is find the stated of the Transistor by calling `IsActive` method.
+		
+	- **Return Type** : `string`, it is return the message to show the state of the transistor.
+	
+------------------------------------------------------------------------------------------------------------------------------------
 
 ## Circuits
 
