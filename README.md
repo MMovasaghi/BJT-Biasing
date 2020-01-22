@@ -27,9 +27,49 @@ Class **DC_Bio** is the main class that calculation is done there.
 * `V_CC` : Voltage generator of the Collector.
 * `V_CE` : The **Collector-Emitter Voltage**.
 * `V_BE` : The Base-Emitter Voltage that it's default value is `0.7`.
+> If pass the `0` value to this property it set the default value.[It must be send at least one value to it.]
 * `V_Sat` : The Collector-Emitter Saturation Voltage that it's default value is `0.2`.
+> If pass the `0` value to this property it set the default value.[It must be send at least one value to it.]
 
 ### Class Methods
+* **Cunstructor**
+	- **Arguments** : 
+		- bool  jE, 
+		- int  circuit_number, 
+		- decimal  beta, 
+		- decimal  vsat  =  0 // default value is 0
+		
+	- **Description** : 
+		- It is initial the value of `Je` , `Circuit_Number` , `Beta` , `V_Sat`.
+		
+	- **Return Type** : `none` 
+	
+* **DC_Initial**
+	- **Arguments** : 
+		- decimal  rc  =  0,
+		- decimal  rb  =  0, 
+		- decimal  vbb  =  0, 
+		- decimal  vcc  =  0, 
+		- decimal  re  =  0, 
+		- decimal  rb1  =  0, 
+		- decimal  rb2  =  0,
+		- decimal  vee  =  0
+		> All arguments have default value 0.
+		
+	- **Description** : 
+		- It is initial the value of all it's equal props.
+		
+	- **Return Type** : `void` 
+
+* **CalCulate_VCE**
+	- **Arguments** : `none` 
+		
+	- **Description** : 
+		- It is initial the value of all it's equal props.
+		
+	- **Return Type** : `decimal` the result of `V_CE` value.
+
+
 
 
 
