@@ -8,6 +8,31 @@ This program is calculating BJT Biasing.
 * [Function Toturial](https://github.com/MMovasaghi/BJT-Biasing#Function-Toturial)
 
 
+## Function Toturial
+
+Class **DC_Bio** is the main class that calculation is done there.
+
+### Class Properties
+* `Beta` : The **β** of the Transistor.
+* `Circuit_Number` : The number of cirtuit that has been selected.(distinguish by Fig. number.)
+* `Je` : The **Emitter Junction** for the Transistor.
+* `Ie` : The current of the Emitter.
+* `Ib` : The current of the Base.
+* `Ic` : The current of the Collector.
+* `R_E` : The Resistor of the Emitter.
+* `R_B` : The Resistor of the Base.
+* `R_C` : The Resistor of the Collector.
+* `V_EE` : Voltage generator of the Emitter.
+* `V_BB` : Voltage generator of the Base.
+* `V_CC` : Voltage generator of the Collector.
+* `V_CE` : The **Collector-Emitter Voltage**.
+* `V_BE` : The Base-Emitter Voltage that it's default value is `0.7`.
+* `V_Sat` : The Collector-Emitter Saturation Voltage that it's default value is `0.2`.
+
+### Class Methods
+
+
+
 ## Circuits
 
 For all the circuits we must get `β` , `V_BE` , `V_Sat` .
@@ -100,5 +125,3 @@ Fig. 1.7
 For this circuit we should get `R_B` , `R_C` , `R_E` , `V_CC` form the user.
 
 ----------------------------------------------------------------------------------------------------
-
-## Function Toturial
